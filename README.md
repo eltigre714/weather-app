@@ -1,3 +1,8 @@
+# Analyn Pureza
+# CPSC 24700 LT1
+# email: analynpureza@lewisu.edu
+# Project: Simple weather app to display current weather according to location chosen by user. Using the node.js and express template created by Professor Eric Pogue. 
+# Link to Final Project Proposal: https://kind-cliff-0909b5010.1.azurestaticapps.net/
 # Node.js and Express Hosted on Microsoft Azure Template
 
 Dependencies: Node.js and Express
@@ -7,5 +12,6 @@ This repository is a template that can be used to create a Node.js and Express w
 Initial Usage:
 - npm install express
 - npm start
+
 
 
