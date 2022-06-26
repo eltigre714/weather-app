@@ -10,13 +10,14 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=impe
 function displayWeather(data) {
   const { name } = data;
   const { icon, description } = data.weather[0];
-  const {temp, humidity } = data.main;
-  console.log(name, icon, description, temp, humidity);
+  const {temp, feels_like, humidity } = data.main;
+  console.log(name, icon, temp, feels_like, description, humidity);
   document.querySelector(".current-city").innerText = name;
   document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
   document.querySelector(".temp").innerText = temp + " °F";
+  document.querySelector(".feels-like").innerText = "FEELS LIKE " + feels_like + " °F";
   document.querySelector(".description").innerText = description;
-  document.querySelector(".humidity").innerText = humidity;
+  document.querySelector(".humidity").innerText = "HUMIDITY " + humidity + "%";
 
 }
 
