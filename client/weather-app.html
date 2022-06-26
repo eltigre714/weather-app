@@ -34,8 +34,10 @@
             <figure>
                 <img src="icons/cloudy.png" alt="Weather Icon">
             </figure>
-            <div class="temp"><b>78</b><b>&deg;</b><b>F</b></div>
-            <div class="weather">Cloudy Skies</div>
+            <div class="temp"><b>78&deg;F</b></div>
+            <div class="description">Cloudy Skies</div>
+            <div class="humidity">Very Humid</div>
+            <div class="wind">Very windy</div>
         </li>
     </section>
 
@@ -44,7 +46,6 @@
         document.getElementById("current-time").innerHTML = time.toLocaleTimeString();    // Get current time
         </script>
     <script src="app.js"></script>
-    <script>`https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${APIKEY}&units=metric`</script>
     
 </body>
 </html>

@@ -12,6 +12,10 @@
       size: 30px;
   }
 
+  .search-loc text {
+    font-family: inherit;
+  }
+  
   body {
       background-color: rgb(198, 234, 198);
       font-family: "Montserrat", sans-serif;
