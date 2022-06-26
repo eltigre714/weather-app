@@ -13,18 +13,34 @@
     <h1 class="heading">WeatherApp</h1> 
     <section class="search-loc">
         <div>
-            <input type="text" spellcheck="false" placeholder="Search for location" required> <!-- Search box for user input -->
-            <button>Search</button>
-            <button>Detect location</button> <!-- Detect user's location -->
+            <input type="text" spellcheck="false" placeholder="Search for location" required>  <!-- Search box for user input -->
+            <button type="search"><strong>Search   </strong></button>           <!-- Search button -->
+            <button type="find-location"><strong>Detect location</strong></button>  <!-- Detect user's location -->
         </div>
     </section>
-    <section class="weather-display">  <!-- Display the weather -->
-        <div class="temp">
-            <span class="tempNum"></span>
-            <span class="degree">&deg;</span>F
-        </div>
+    <section class="weather-and-time">
+        <p><span><b>CURRENT WEATHER</b></span></p>
+        <p><span id="current-time"></span></p>  <!-- Display current time -->
     </section>
 
+    <section class="weather-display">  <!-- Display the weather -->
+        <img src="icons/cloudy.png" alt="Weather Icon">
+        <div class="container">
+            <span class="temp">78</span>
+
+            <span class="degree">&deg;</span>F
+
+            <div class="weather">Cloudy Skies</div>
+            
+            <div class="city">
+                <span>Aurora, Illinois</span>
+            </div>
+        </div>
+    </section>
+    <script>
+        var time = new Date();
+        document.getElementById("current-time").innerHTML = time.toLocaleTimeString();
+        </script>
     <script src="app.js"></script>
 </body>
 </html>
