@@ -15,7 +15,7 @@
   .search-loc text {
     font-family: inherit;
   }
-  
+
   body {
       background-color: rgb(198, 234, 198);
       font-family: "Montserrat", sans-serif;
@@ -63,7 +63,7 @@
       font-size: 40px;
   }
 
-  .city {
+  .current-city{
       text-align: center;
       padding-top: 12px;
   }
