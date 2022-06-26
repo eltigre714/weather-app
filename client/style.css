@@ -15,19 +15,21 @@
   body {
       background-color: rgb(198, 234, 198);
       font-family: "Montserrat", sans-serif;
+      margin-left: 20px;
+      margin-right: 20px
   }
 
   .search-loc input { 
       width: 20%;
       padding: 8px 12px;
-      border-radius: 4px;
+      border-radius: 12px;
   }
 
   .search-loc button {
       font: black;
       background: lightgray;
       padding: 8px 12px;
-      border-radius: 4px;
+      border-radius: 12px;
       transition-duration: 0.4s;
   }
 
@@ -50,4 +52,18 @@
 
   .container {
     line-height: 1.8;
+    list-style-type: none;
+  }
+
+  .weather-display .temp {
+      font-size: 40px;
+  }
+
+  .city {
+      text-align: center;
+      padding-top: 12px;
+  }
+
+  .weather-display img {
+      max-width: 500px;
   }

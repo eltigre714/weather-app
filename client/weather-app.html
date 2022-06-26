@@ -18,25 +18,33 @@
             <button type="find-location"><strong>Detect location</strong></button>  <!-- Detect user's location -->
         </div>
     </section>
+    <section class="city">
+        <div>
+            <span class="current-city">Aurora, Illinois</span>
+        </div>
+    </section>
+
     <section class="weather-and-time">
         <p><span><b>CURRENT WEATHER</b></span></p>
         <p><span id="current-time"></span></p>  <!-- Display current time -->
     </section>
 
     <section class="weather-display">  <!-- Display the weather -->
-        <img src="icons/cloudy.png" alt="Weather Icon">
-        <div class="container">
-            <span class="temp"><b>78</b><b>&deg;</b><b>F</b></span>
+        <li class="container">
+            <figure>
+                <img src="icons/cloudy.png" alt="Weather Icon">
+            </figure>
+            <div class="temp"><b>78</b><b>&deg;</b><b>F</b></div>
             <div class="weather">Cloudy Skies</div>
-            <div class="city">
-                <span>Aurora, Illinois</span>
-            </div>
-        </div>
+        </li>
     </section>
-    <script>
-        var time = new Date();
-        document.getElementById("current-time").innerHTML = time.toLocaleTimeString();
+
+    <script>                                     
+        var time = new Date(); 
+        document.getElementById("current-time").innerHTML = time.toLocaleTimeString();    // Get current time
         </script>
     <script src="app.js"></script>
+    <script>`https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${APIKEY}&units=metric`</script>
+    
 </body>
 </html>
