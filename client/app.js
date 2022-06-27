@@ -1,10 +1,10 @@
-
 // Get weather information from API
 function getWeather(city) {
 fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=d088141b907de3effa5c6e2b4d9b08bf").then(function(response) {
   return response.json()
 }).then((data) => this.displayWeather(data));
 }
+
 
 // Get weather data
 function displayWeather(data) {
@@ -21,15 +21,11 @@ function displayWeather(data) {
 
 }
 
+function searchWeather() {
+  this.getWeather(document.querySelector(".search-field").value);
+}
 
-/**const form = document.querySelector(".weather-display form");
- 
-form.addEventListener("search", e => {
-  e.preventDefault();
-  const inputVal = input.value;
+document.querySelector(".search").addEventListener("click", function () {
+  searchWeather();
 });
 
-
-const inputVal = input.value;
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${APIKEY}&units=metric`; 
-**/

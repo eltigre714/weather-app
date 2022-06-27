@@ -63,11 +63,19 @@
       font-size: 40px;
   }
 
+  .weather-display .feels-like .description .humidity {
+    font: 25px;
+  }
   .current-city{
       text-align: center;
       padding-top: 12px;
+      font: 25px;
   }
 
   .weather-display img {
       max-width: 500px;
+  }
+
+  .description {
+    text-transform: capitalize;
   }

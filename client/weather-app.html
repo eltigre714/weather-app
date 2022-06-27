@@ -12,10 +12,12 @@
     <!-- Display Header -->
     <h1 class="heading">WeatherApp</h1> 
     <section class="search-loc">
-        <div>
-            <input type="text" spellcheck="false" placeholder="Search for location" required>  <!-- Search box for user input -->
-            <button type="search"><strong>Search   </strong></button>           <!-- Search button -->
-            <button type="find-location"><strong>Detect location</strong></button>  <!-- Detect user's location -->
+        <div class = "search">
+            <form>
+                <input type="text" class="search-field" spellcheck="false" placeholder="Search for location" required>  <!-- Search box for user input -->
+                <button id="search"><strong>Search</strong></button>           <!-- Search button -->
+                <button id="find-location"><strong>Detect location</strong></button>  <!-- Detect user's location -->
+            </form>
         </div>
     </section>
     <section class="current-city">
@@ -45,7 +47,7 @@
         var time = new Date(); 
         document.getElementById("current-time").innerHTML = time.toLocaleTimeString();    // Get current time
         </script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     
 </body>
 </html>
