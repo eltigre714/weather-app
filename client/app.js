@@ -21,11 +21,18 @@ function displayWeather(data) {
 
 }
 
+
 function searchWeather() {
   this.getWeather(document.querySelector(".search-field").value);
 }
 
-document.querySelector(".search").addEventListener("click", function () {
+document.querySelector(".search button").addEventListener("click", function () {  // Event listener for mouse click
   searchWeather();
+});
+
+document.querySelector(".search-field").addEventListener("keyup", function (e) {  // Event listener for enter key
+  if (e.key == "Enter") {
+  searchWeather();
+  }
 });
 
