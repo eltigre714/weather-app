@@ -19,7 +19,6 @@ function displayWeather(data) {
   document.querySelector(".description").innerText = description;
   document.querySelector(".humidity").innerText = "HUMIDITY " + humidity + "%";
   document.querySelector(".coord").innerText= "";
-
 }
 
 function searchWeather() {

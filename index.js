@@ -1,4 +1,5 @@
 const express = require("express");
+const { MongoClient } = require("mongodb");
 const app = express();
 
 app.use(express.static(__dirname + '/client'))
@@ -12,3 +13,4 @@ app.get('/test', function(request, response) {
 app.listen(port, function() {
 	console.log("Server is running at http://localhost:3000/")
 })
+
