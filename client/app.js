@@ -36,9 +36,6 @@ document.querySelector(".search-field").addEventListener("keyup", function (e) {
   }
 });
 
-
-
-
 function searchLocation() {
   this.success(document.querySelector(".detectLoc").value);
 }
