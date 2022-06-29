@@ -79,3 +79,7 @@
   .description {
     text-transform: capitalize;
   }
+
+  .detectLoc {
+    padding: 10px;
+  }
