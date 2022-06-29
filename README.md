@@ -5,8 +5,7 @@
 # Instructions: Enter a name of a city and click on the submit button to display the location's current weather. 
 # Link to Final Project Proposal: https://kind-cliff-0909b5010.1.azurestaticapps.net/.
 # Node.js and Express Hosted on Microsoft Azure Template created by Professor Eric J. Pogue. 
-# Weather Icons found at https://www.iconfinder.com/weather-icons?price=free.
-# API from https://openweathermap.org/api. 
+# API and weather icons from https://openweathermap.org/api. 
 
 
 
